@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Salve os Polinizadores</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <h1>Salve os Polinizadores</h1>
+  <nav>
+    <a href="#inicio">Início</a>
+    <a href="#importancia">Importância</a>
+    <a href="#jogo">Jogo</a>
+    <a href="#quiz">Quiz</a>
+  </nav>
+</header>
+
+<section id="inicio" class="hero">
+  <div class="hero-text">
+    <h2>Agro forte, futuro sustentável</h2>
+    <p>Abelhas, borboletas e beija-flores ajudam a manter a produção de alimentos e o equilíbrio da natureza.</p>
+    <a href="#jogo" class="btn">Começar missão</a>
+  </div>
+</section>
+
+<section id="importancia" class="section">
+  <h2>Por que os polinizadores são importantes?</h2>
+  <div class="cards">
+    <div class="card">🐝 <h3>Abelhas</h3><p>Auxiliam na produção de frutas, sementes e hortaliças.</p></div>
+    <div class="card">🦋 <h3>Borboletas</h3><p>Indicam equilíbrio ambiental e ajudam na reprodução das plantas.</p></div>
+    <div class="card">🌺 <h3>Flores nativas</h3><p>Oferecem alimento e abrigo para diversas espécies.</p></div>
+  </div>
+</section>
+
+<section id="jogo" class="section game">
+  <h2>Jogo: construa um jardim para polinizadores</h2>
+  <p>Escolha ações sustentáveis e aumente sua pontuação ambiental.</p>
+
+  <div class="score">
+    Pontuação: <span id="score">0</span>
+  </div>
+
+  <div class="actions">
+    <button onclick="addPoints(10)">Plantar flores nativas</button>
+    <button onclick="addPoints(15)">Evitar agrotóxicos</button>
+    <button onclick="addPoints(20)">Preservar nascentes</button>
+    <button onclick="addPoints(25)">Criar área verde</button>
+  </div>
+
+  <p id="message">Sua missão começou!</p>
+</section>
+
+<section id="quiz" class="section quiz">
+  <h2>Quiz sustentável</h2>
+  <p>Qual prática ajuda os polinizadores?</p>
+
+  <button onclick="checkAnswer(false)">Queimar áreas verdes</button>
+  <button onclick="checkAnswer(true)">Plantar flores e preservar habitats</button>
+  <button onclick="checkAnswer(false)">Remover toda vegetação nativa</button>
+
+  <p id="quizResult"></p>
+</section>
+
+<footer>
+  <p>O futuro do agro depende do equilíbrio entre produção e meio ambiente.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
